@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="preload" href="/styles/variables.css" as="style">
+  <link rel="preload" href="/styles/global.css" as="style">
+  <link rel="preload" href="/styles/aside.css" as="style">
+  <link rel="preload" href="/styles/main.css" as="style">
+
+  <link rel="stylesheet" href="/styles/variables.css">
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/aside.css">
+  <link rel="stylesheet" href="/styles/main.css">
+
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+  <title>BDS | Guardian</title>
+</head>
+<body>
+  <aside>
+    <header>
+      <img src="./assets/bds-logo.png" alt="Logo da empresa BDS Data Solution" height="78" width="222">
+    </header>
+
+    <section>
+      <h2>Potencializando suas decisões</h2>
+      <p>Um único Data Hub com Big Data as a Service (BDaaS), Platform as a Service (PaaS), expertise em Analytics com Inteligência Artificial e foco no mercado financeiro.</p>
+    </section>
+
+    <footer>
+      <img src="./assets/selo-cubo-startup-2020.svg" alt="Selo Cubo Itaú Startup 2020" height="83" width="83">
+      <img src="./assets/logo-inovabra-habitat.png" alt="Logo Inovabra Habitat" width="211" height="58">
+    </footer>
+  </aside>
+
+  <main class="content">
+    <section>
+      <div id="warnings">
+        <div class="alert-item">
+          <img src="assets/alert.svg" alt="Alerta!">
+
+          <span>Não foi possível realizar o cadastro, por favor verifique os campos incorretos</span>
+
+          <button type="button">
+            <img src="assets/close.svg" alt="Fechar">
+          </button>
+        </div>
+      </div>
+
+      <header>
+        <h1>Login</h1>
+        <span>Ainda não é membro? <a href="#">Cadastre-se</a></span>
+      </header>
+
+      <form action="#" method="post">
+        <fieldset>
+          <label for="email">Email</label>
+          <input type="email" placeholder="nome@exemplo.com.br" id="email" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="password">Senha</label>
+          <input type="password" placeholder="******" id="password" required>
+        </fieldset>
+
+        <a href="#">Esqueceu a sua senha?</a>
+
+        <button type="submit">
+          Entrar
+        </button>
+
+        <div class="oauth-providers">
+          <button type="button">
+            Entrar com sua conta Microsoft
+            <img src="./assets/microsoft-logo.svg" alt="Logo da Microsoft">
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
