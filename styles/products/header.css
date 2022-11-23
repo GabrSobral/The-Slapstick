@@ -28,7 +28,7 @@
 }
 .app_header > div > nav {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   margin-left: auto;
 }
 
