@@ -47,10 +47,6 @@
 }
 
 @media (max-width: 560px) {
-  .app_header > div > a {
-    display: none;
-  }
-
   .app_header > div > nav span {
     display: none;
   }
