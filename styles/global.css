@@ -6,36 +6,47 @@
   font-family: 'Inter', sans-serif;
 }
 
-span, p, a, h1, h2, h3, h4, h5, input, label {
+html {
+  font-size: 16px;
+  background-color: var(--background-gray);
+}
+
+li {
+  list-style: none;
+}
+
+span, p, a, h1, h2, h3, h4, h5, input, label, strong {
   color: var(--text);
+  text-underline-offset: 2px;
 }
 
 button {
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  border: 0;
+  font-size: 1rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0;
+  gap: 1rem;
+
+  background-color: transparent;
 }
 button:hover {
   filter: brightness(0.9);
+}
+button:active {
+  box-shadow: inset 5px 5px 10px #00000025;
+  transform: scale(0.95);
 }
 
 a {
   text-decoration: none;
 }
 
-body {
-  display: flex;
-}
-
-fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-label {
-  font-weight: 500;
+@media (max-width: 920px) {
+  html {
+    font-size: 17px;
+  }
 }

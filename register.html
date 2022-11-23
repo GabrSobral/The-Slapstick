@@ -22,7 +22,7 @@
 
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
-  <title>O Pastelão | Entrar</title>
+  <title>O Pastelão | Registrar</title>
 </head>
 <body>
   <aside>
@@ -33,11 +33,21 @@
   <main class="content">
     <section>
       <header>
-        <h1>Entrar</h1>
-        <span>Não tem cadastro? <a href="./register.html">Clique para cadastrar-se</a></span>
+        <h1>Registrar</h1>
+        <span>Já tem cadastro? <a href="./login.html">Clique para entrar</a></span>
       </header>
 
       <form action="#" method="post">
+        <fieldset>
+          <label for="name_lastname">Nome e sobrenome</label>
+          <input type="type" placeholder="John Doe" id="name_lastname" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="name_lastname">Número de celular</label>
+          <input type="tel" placeholder="(13) 1234-5678" id="name_lastname" required maxlength="12" minlength="11">
+        </fieldset>
+
         <fieldset>
           <label for="email">Email</label>
           <input type="email" placeholder="nome@exemplo.com.br" id="email" required>
@@ -48,23 +58,16 @@
             Senha
             <span>(mínimo 8 carácteres)</span>
           </label>
-          <input type="password" placeholder="********" id="password" required minlength="8">
-        </fieldset>
-
-        <fieldset class="remember_me_container">
-          <label for="remember_me_id">
-            <input type="checkbox" id="remember_me_id">
-
-            Lembrar-me
-          </label>
-          <a href="#">Esqueceu a sua senha?</a>
+          <input type="password" placeholder="******" id="password" required minlength="8">
         </fieldset>
 
         <button type="submit" id="next">
           Entrar
         </button>
 
-        <a href="./products.html">Continuar sem cadastro</a>
+        <span>
+          Ao se registrar, você estará concordando com os nossos <a href="#">termos de uso</a> e as <a href="#">políticas de privacidade</a>.
+        </span>
       </form>
     </section>
   </main>

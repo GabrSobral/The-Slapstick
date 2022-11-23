@@ -1,0 +1,44 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  
+  height: 100vh;
+  width: calc(50% - 1.75rem);
+  padding: 2.75rem 2.5rem;
+
+  background-image: url("../../assets/pastel.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  backdrop-filter: brightness(25%);
+  -webkit-backdrop-filter: brightness(25%);
+}
+
+aside > img {
+  max-width: 90%;
+}
+
+aside > span {
+  font-family: "Satisfy";
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  aside > img {
+    height: 6rem;
+  }
+  aside > span {
+    display: none;
+  }
+  aside {
+    /* display: none; */
+    height: 15vh;
+    width: 100%;
+  }
+}

@@ -1,0 +1,227 @@
+/* #region General */
+  .content {
+    padding: 2rem 0;
+    max-width: var(--max-width-content);
+    margin: auto;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .content > a{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+    gap: 1rem ;
+  }
+  .content > a:hover {
+    text-decoration: underline;
+  }
+/* #endregion */
+
+/* #region Product Detail Container*/
+  .content > .product_detail_container, .product_observation_container {
+    border-radius: 6px;
+    background-color: var(--background);
+    padding: 1rem;
+    box-shadow: 3px 3px 5px #00000015;
+
+    display: flex;
+    gap: 1rem;
+  }
+  .content > .product_detail_container > .product_image_container {
+    min-width: 450px;
+    min-height: 450px;
+    max-width: 450px;
+    max-height: 450px;
+    background-color: #00000050;
+    border-radius: 6px;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-image: url('../../assets/frango-catupiry.webp')
+  }
+  .content > .product_detail_container > .product_image_container  > div {
+    backdrop-filter: blur(6px) brightness(0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .content > .product_detail_container > .product_image_container img {
+    object-fit: contain;
+  }
+
+  .content .product_name {
+    font-size: 2.75rem;
+    font-weight: 700;
+  }
+
+  .content > .product_detail_container > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .content > .product_detail_container > div:last-child > section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .content > .product_detail_container > div:last-child > .side_dish_section > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .content > .product_detail_container .side_dish_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .content > .product_detail_container .side_dish_container > div {
+    display: flex;
+  }
+  .content > .product_detail_container .side_dish_container div button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 2rem;
+    max-height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 0.5rem;
+
+    border-radius: 6px 0 0 6px;
+
+    background-color: var(--red-900);
+  }
+  .content > .product_detail_container .side_dish_container div > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 2rem;
+    max-height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 0.5rem;
+
+    font-weight: 600;
+  }
+  .content > .product_detail_container .side_dish_container div button:last-child {
+    border-radius: 0 6px 6px 0;
+  }
+  .content > .product_detail_container  .price_and_fav_container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .content > .product_detail_container  .price_and_fav_container > span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green-500);
+  }
+  .content > .product_detail_container  .price_and_fav_container > div {
+    display: flex;
+    gap: 1rem;
+  }
+  .content > .product_detail_container  .price_and_fav_container button:active {
+    box-shadow: none;
+    transform: scale(0.95);
+  }
+
+
+  .content > .product_detail_container .buy_button {
+    background-color: var(--red-900);
+    padding: 1rem;
+    border-radius: 6px;
+
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+/* #endregion */
+
+/* #region Product Observation Container */
+
+  .content > .product_observation_container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .content > .product_observation_container  textarea{
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #00000015;
+    resize: none;
+    font-size: 1rem;
+
+    height: 7rem;
+  }
+  .content .finalize_message {
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .content .finalize_order_anchor {
+    width: fit-content;
+    padding: 1rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 6px;
+
+    background-color: var(--red-900);
+    color: white;
+    margin: auto;
+  }
+  .content .finalize_order_anchor:hover {
+    text-decoration: none;
+    filter: brightness(0.95);
+  }
+/* #endregion */
+
+@media (max-width: 1024px) {
+  .content > .product_detail_container {
+    flex-direction: column;
+  }
+  .content > .product_detail_container > .product_image_container {
+    min-width: 100%;
+    min-height: fit-content;
+    max-width: 100%;
+    max-height: 200px;
+  }
+  .content > .product_detail_container > .product_image_container img {
+    min-width: 100%;
+    min-height: fit-content;
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 920px) {
+  .content > .product_detail_container > .product_image_container {
+    min-width: 100%;
+    min-height: fit-content;
+    max-width: 100%;
+    max-height: 200px;
+  }
+  .content > .product_detail_container > .product_image_container img {
+    min-width: 100%;
+    min-height: fit-content;
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+@media (max-width: 686px) {
+  .content > .product_detail_container .side_dish_container {
+    flex: 1;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,57 @@
+.app_header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+
+  height: fit-content;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: var(--primary);
+
+  z-index: 10;
+}
+.app_header > div {
+  max-width: var(--max-width-content);
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.app_header > div {
+  display: flex;
+  gap: 2rem;
+}
+.app_header > div > nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+
+.app_header > div > nav > a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.app_header > div > nav > a > span {  
+  color: white;
+  margin-left: auto;
+}
+.app_header > div > nav > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .app_header > div > a {
+    display: none;
+  }
+
+  .app_header > div > nav span {
+    display: none;
+  }
+}

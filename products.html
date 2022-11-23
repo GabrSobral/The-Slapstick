@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="preload" href="/styles/variables.css" as="style">
+  <link rel="preload" href="/styles/global.css" as="style">
+
+  <link rel="preload" href="/styles/products/header.css" as="style">
+  <link rel="preload" href="/styles/products/main.css" as="style">
+  <link rel="preload" href="/styles/products/product-item.css" as="style">
+
+  <link rel="stylesheet" href="/styles/variables.css">
+  <link rel="stylesheet" href="/styles/global.css">
+  
+  <link rel="stylesheet" href="/styles/products/header.css">
+  <link rel="stylesheet" href="/styles/products/main.css">
+  <link rel="stylesheet" href="/styles/products/product-item.css">
+
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+  <title>O Pastelão | Produtos</title>
+</head>
+<body>
+  <header class="app_header">
+    <div>
+      <a href="./products.html">
+        <img src="./assets/logo-without-background.svg" alt="Imagem da logo do Pastelão" width="72">
+      </a>
+
+      <nav>
+        <a href="./finalize-order.html">
+          <span>Meu carrinho</span>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.9625 14.5375L27.4875 6.175C27.5141 6.03137 27.5077 5.88358 27.4687 5.7428C27.4297 5.60203 27.3592 5.47198 27.2625 5.3625C27.1701 5.24947 27.0538 5.15834 26.9219 5.09565C26.7901 5.03297 26.646 5.0003 26.5 5H6.3375L5.725 1.6375C5.64039 1.17843 5.39787 0.763417 5.03946 0.464355C4.68104 0.165292 4.2293 0.00102112 3.7625 0H1.5C1.23478 0 0.98043 0.105357 0.792893 0.292893C0.605357 0.48043 0.5 0.734784 0.5 1C0.5 1.26522 0.605357 1.51957 0.792893 1.70711C0.98043 1.89464 1.23478 2 1.5 2H3.7625L7.1875 20.875C6.69918 21.3051 6.34044 21.8629 6.15156 22.4856C5.96269 23.1083 5.95117 23.7714 6.11829 24.4003C6.28542 25.0292 6.62456 25.5991 7.09765 26.0459C7.57073 26.4927 8.15902 26.7988 8.79644 26.9298C9.43387 27.0608 10.0952 27.0115 10.7061 26.7874C11.3171 26.5633 11.8534 26.1733 12.255 25.6613C12.6566 25.1492 12.9074 24.5353 12.9794 23.8886C13.0514 23.2418 12.9417 22.5878 12.6625 22H19.3375C19.0125 22.6852 18.9188 23.4574 19.0706 24.2005C19.2224 24.9435 19.6114 25.6171 20.1791 26.12C20.7468 26.6228 21.4624 26.9277 22.2184 26.9887C22.9743 27.0496 23.7296 26.8634 24.3705 26.4581C25.0115 26.0527 25.5034 25.4502 25.7723 24.7411C26.0413 24.032 26.0726 23.2547 25.8616 22.5263C25.6506 21.7978 25.2087 21.1576 24.6025 20.702C23.9962 20.2464 23.2584 20 22.5 20H9.0625L8.5125 17H23.0125C23.7147 16.9997 24.3945 16.753 24.9335 16.3031C25.4726 15.8531 25.8367 15.2283 25.9625 14.5375ZM11 23.5C11 23.7967 10.912 24.0867 10.7472 24.3334C10.5824 24.58 10.3481 24.7723 10.074 24.8858C9.79994 24.9993 9.49834 25.0291 9.20736 24.9712C8.91639 24.9133 8.64912 24.7704 8.43934 24.5607C8.22956 24.3509 8.0867 24.0836 8.02882 23.7926C7.97094 23.5017 8.00065 23.2001 8.11418 22.926C8.22771 22.6519 8.41997 22.4176 8.66665 22.2528C8.91332 22.088 9.20333 22 9.5 22C9.89782 22 10.2794 22.158 10.5607 22.4393C10.842 22.7206 11 23.1022 11 23.5ZM24 23.5C24 23.7967 23.912 24.0867 23.7472 24.3334C23.5824 24.58 23.3481 24.7723 23.074 24.8858C22.7999 24.9993 22.4983 25.0291 22.2074 24.9712C21.9164 24.9133 21.6491 24.7704 21.4393 24.5607C21.2296 24.3509 21.0867 24.0836 21.0288 23.7926C20.9709 23.5017 21.0007 23.2001 21.1142 22.926C21.2277 22.6519 21.42 22.4176 21.6666 22.2528C21.9133 22.088 22.2033 22 22.5 22C22.8978 22 23.2794 22.158 23.5607 22.4393C23.842 22.7206 24 23.1022 24 23.5ZM6.7 7H25.3L24 14.175C23.9588 14.4067 23.8372 14.6165 23.6566 14.7674C23.4759 14.9183 23.2479 15.0007 23.0125 15H8.15L6.7 7Z" fill="#F7F7F7"/>
+          </svg>
+        </a>
+  
+        <a href="#">
+          <span>Olá, Anônimo</span>
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5ZM27.4192 30.5903C24.6633 32.6819 21.2266 33.9231 17.5 33.9231C13.619 33.9231 10.0525 32.5769 7.24183 30.326C8.25698 28.603 9.7009 27.1714 11.4338 26.1709C13.1963 25.1533 15.1956 24.6175 17.2308 24.6175C19.2659 24.6175 21.2653 25.1533 23.0278 26.1709C24.7903 27.1885 26.2539 28.6521 27.2714 30.4147C27.3101 30.4817 27.3602 30.5411 27.4192 30.5903ZM28.416 29.7705C28.4137 29.7664 28.4113 29.7624 28.4089 29.7584C26.7159 26.8382 23.9488 24.6952 20.698 23.7865C22.232 23.0074 23.4589 21.7342 24.1807 20.1723C24.9025 18.6105 25.0772 16.8511 24.6766 15.1778C24.276 13.5045 23.3235 12.0149 21.9726 10.9493C20.6218 9.88365 18.9513 9.30411 17.2308 9.30411C15.5102 9.30411 13.8398 9.88365 12.4889 10.9493C11.1381 12.0149 10.1855 13.5045 9.78493 15.1778C9.38433 16.8511 9.55903 18.6105 10.2809 20.1723C11.0027 21.7342 12.2295 23.0074 13.7636 23.7865C10.6276 24.6631 7.94179 26.6883 6.23613 29.4517C3.05971 26.457 1.07692 22.2101 1.07692 17.5C1.07692 8.42979 8.42979 1.07692 17.5 1.07692C26.5702 1.07692 33.9231 8.42979 33.9231 17.5C33.9231 22.3798 31.7949 26.7624 28.416 29.7705ZM11.9561 13.4371C11.2591 14.4804 10.887 15.7069 10.887 16.9615C10.887 18.644 11.5554 20.2576 12.7451 21.4472C13.9347 22.6369 15.5483 23.3053 17.2308 23.3053C18.4854 23.3053 19.7119 22.9332 20.7552 22.2362C21.7984 21.5391 22.6115 20.5484 23.0916 19.3892C23.5718 18.23 23.6974 16.9545 23.4526 15.7239C23.2079 14.4934 22.6037 13.363 21.7165 12.4758C20.8293 11.5886 19.6989 10.9845 18.4684 10.7397C17.2378 10.4949 15.9623 10.6205 14.8031 11.1007C13.644 11.5808 12.6532 12.3939 11.9561 13.4371Z" fill="white"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>Informações</h2>
+      
+      <div class="about_us">
+        <p>
+          Nossa cozinha temos: pastel de carne, queijo, frango, catupiry, camarão, caldo de cana, porção...
+        </p>
+  
+        <footer>
+          <span>Pedido mínimo: <span>R$ 20,00</span></span>
+          <span>Entrega: <span>60 - 75 minutos</span></span>
+          <span>Taxa: <span>A consultar</span></span>
+        </footer>
+      </div>
+    </section>
+
+    <section>
+      <h2>Produtos</h2>
+      <div class="products_container">
+        <ul class="product_tabs">
+          <li class="active">
+            <button type="button">
+              Pastéis
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Salgados
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Tortas
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Molhos
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Promoções
+            </button>
+          </li>
+        </ul>
+  
+        <ul class="products_list">
+          <li>
+            <a href="./products-detail.html" class="product_list_item">
+              <div>
+                <img src="./assets/frango-catupiry.webp" alt="">
+                <span>
+                  Ver detalhes
+                </span>
+              </div>
+
+              <div>
+                <strong>Frangão</strong>
+                <p>Frango e catupiry</p>
+
+                <strong>R$ 9,50</strong>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="./products-detail.html" class="product_list_item">
+              <div>
+                <img src="./assets/frango-catupiry.webp" alt="">
+                <span>
+                  Ver detalhes
+                </span>
+              </div>
+
+              <div>
+                <strong>Frangão</strong>
+                <p>Frango e catupiry</p>
+
+                <strong>R$ 9,50</strong>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="./products-detail.html" class="product_list_item">
+              <div>
+                <img src="./assets/frango-catupiry.webp" alt="">
+                <span>
+                  Ver detalhes
+                </span>
+              </div>
+
+              <div>
+                <strong>Frangão</strong>
+                <p>Frango e catupiry</p>
+
+                <strong>R$ 9,50</strong>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="product_list_item">
+              <div>
+                <img src="./assets/frango-catupiry.webp" alt="">
+                <span>
+                  Ver detalhes
+                </span>
+              </div>
+
+              <div>
+                <strong>Frangão</strong>
+                <p>Frango e catupiry</p>
+
+                <strong>R$ 9,50</strong>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

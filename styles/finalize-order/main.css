@@ -1,0 +1,237 @@
+/* #region General */
+.content {
+  padding: 2rem 0;
+  max-width: var(--max-width-content);
+  margin: auto;
+  width: 90%;
+
+  display: flex;
+  gap: 1rem;
+}
+.content > section:first-child{
+  flex: 0.73;
+}
+.content > section:last-child{
+  flex: 0.27;
+}
+.content > section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem ;
+  width: 100%;
+}
+.content > section > form > fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem ;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+
+  border:1px solid #00000015;
+}
+.content > section > form > label{
+  width: 100%;
+}
+.content > section > form input{
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  background-color: transparent;
+
+  outline-color: var(--red-900);
+  outline-offset: 4px;
+
+  transition: 0.3s;
+  width: 100%;
+}
+
+.content > section > a{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+
+  gap: 1rem ;
+}
+.content > section > a:hover {
+  text-decoration: underline;
+}
+/* #endregion */
+
+.content > section > ul {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.content > section > ul > li {
+width: 100%;
+padding: 1rem;
+background-color: var(--background);
+box-shadow: 1px 3px 5px #00000015;
+
+display: flex;
+padding: 1rem;
+gap: 1rem;
+
+flex-wrap: wrap;
+}
+.content > section > ul > li > div > strong {
+font-size: 1.5rem;
+font-weight: 600;
+}
+.content > section > ul > li > .image_container {
+position: relative;
+
+max-height: 10rem;
+max-width: 10rem;
+overflow: hidden;
+border-radius: 6px;
+}
+.content > section > ul > li > .image_container > button{
+position: absolute;
+top: 0.5rem;
+left: 0.5rem;
+padding: 0.5rem;
+background-color: #00000095;
+border-radius: 6px;
+}
+.content > section > ul > li > .image_container > img {
+border-radius: 6px;
+overflow: hidden;
+height: 100%;
+width: 100%;
+
+object-fit: cover;
+}
+.content > section > ul > li > div {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+.content > section > ul > li > div > .order_item_content {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+
+margin-top: auto;
+}
+.content > section > ul > li > div > .order_item_content > div{
+display: grid;
+grid-template-columns: auto auto;
+gap: 0.5rem;
+width: fit-content;
+}
+
+.content > section > ul > li > div .order_item_header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+gap: 1rem;
+}
+.content > section > ul > li > div .order_item_content > strong{
+font-size: 2rem;
+font-weight: 700;
+color: var(--green-500);
+
+flex: 1;
+text-align: right;
+margin-top: auto;
+
+white-space: nowrap;
+}
+.content > section > ul > li > div .order_item_header > a{
+font-size: 1.5rem;
+font-weight: 600;
+}
+.content > section > ul > li > div .order_item_header > a:hover{
+text-decoration: underline;
+}
+
+.content > section > strong {
+font-size: 1.5rem;
+text-align: right;
+}
+.content > section > strong > span {
+color: var(--green-500);
+}
+.content > section > .finalize_order {
+width: fit-content;
+min-width: 15rem;
+width: 100%;
+padding: 1rem 1.5rem;
+border-radius: 6px;
+background-color: var(--red-900);
+color: white;
+font-weight: 600;
+
+margin-left: auto;
+}
+
+
+/* #region Side Dish Container */
+.content > section > ul > li > div .side_dish_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+.content > section > ul > li > div .side_dish_container > span {
+  width: 100%;
+}
+.content > section > ul > li > div .side_dish_container > div {
+  display: flex;
+}
+.content > section > ul > li > div .side_dish_container div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0.5rem;
+
+  border-radius: 6px 0 0 6px;
+
+  background-color: var(--red-900);
+}
+.content > section > ul > li > div .side_dish_container div > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0.5rem;
+
+  font-weight: 600;
+}
+.content > section > ul > li > div .side_dish_container div button:last-child {
+  border-radius: 0 6px 6px 0;
+}
+/* #endregion */
+
+@media (max-width: 1024px) {
+.content {
+  flex-direction: column;
+}
+}
+
+@media (max-width: 920px) {
+
+}
+@media (max-width: 686px) {
+.content > section > ul > li {
+  flex-direction: column;
+}
+.content > section > ul > li > .image_container, .content > section > ul > li > .image_container > img{
+  min-width: 100%;
+}
+}

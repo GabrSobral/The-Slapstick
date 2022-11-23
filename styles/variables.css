@@ -1,11 +1,21 @@
 :root {
-  --red-500: #E53E3E;
+  --primary: #000000;
+  
+  --red-900: #A80000;
   --red-100: #FED7D7;
+
+  --gray-400: #a9a9a9;
+
+  --green-500: #009246;
+
   --input-border: #E2E8F0;
 
   --text: #2D3748;
-  --text-light: #FFFFFF;
   --text-soft: #FFFFFFB3;
+  --text-light: #FFFFFF;
 
   --background: #FFFFFF;
+  --background-gray: #F9F9F9;
+
+  --max-width-content: 1196px
 }
