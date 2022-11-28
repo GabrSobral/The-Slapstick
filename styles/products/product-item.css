@@ -14,7 +14,6 @@
 .products_container > .products_list .product_list_item > div:first-child {
   position: relative;
 
-  background-color: red;
   width: 100%;
   height: 10rem;
 }
