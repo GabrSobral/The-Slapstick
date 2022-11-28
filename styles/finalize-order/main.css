@@ -130,6 +130,7 @@ width: fit-content;
 display: flex;
 align-items: center;
 justify-content: space-between;
+flex-wrap: wrap;
 
 gap: 1rem;
 }
@@ -228,10 +229,13 @@ margin-left: auto;
 
 }
 @media (max-width: 686px) {
-.content > section > ul > li {
-  flex-direction: column;
-}
-.content > section > ul > li > .image_container, .content > section > ul > li > .image_container > img{
-  min-width: 100%;
-}
-}
+  .content > section > ul > li {
+    flex-direction: column;
+  }
+  .content > section > ul > li > .image_container, .content > section > ul > li > .image_container > img{
+    min-width: 100%;
+  }
+  .content > section > ul > li > div > .order_item_content > div{
+    grid-template-columns: auto;
+    width: 100%;
+  }
